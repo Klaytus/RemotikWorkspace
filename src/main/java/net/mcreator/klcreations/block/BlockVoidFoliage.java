@@ -18,13 +18,13 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class BlockVoidFoliage extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class BlockVoidFoliage extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidfoliage")
 	public static final Block block = null;
-	public BlockVoidFoliage(ElementsDimensionAdditions instance) {
+	public BlockVoidFoliage(ElementsKlcreationsMod instance) {
 		super(instance, 24);
 	}
 

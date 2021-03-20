@@ -32,14 +32,14 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class ItemMagicScepter extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class ItemMagicScepter extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:magicscepter")
 	public static final Item block = null;
 	public static final int ENTITYID = 1;
-	public ItemMagicScepter(ElementsDimensionAdditions instance) {
+	public ItemMagicScepter(ElementsKlcreationsMod instance) {
 		super(instance, 17);
 	}
 

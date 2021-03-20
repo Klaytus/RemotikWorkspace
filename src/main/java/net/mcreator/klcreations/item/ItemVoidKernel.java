@@ -13,13 +13,13 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class ItemVoidKernel extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class ItemVoidKernel extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidkernel")
 	public static final Item block = null;
-	public ItemVoidKernel(ElementsDimensionAdditions instance) {
+	public ItemVoidKernel(ElementsKlcreationsMod instance) {
 		super(instance, 10);
 	}
 

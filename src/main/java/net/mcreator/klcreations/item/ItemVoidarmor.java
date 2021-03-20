@@ -15,10 +15,10 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class ItemVoidarmor extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class ItemVoidarmor extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidarmorhelmet")
 	public static final Item helmet = null;
 	@GameRegistry.ObjectHolder("klcreations:voidarmorbody")
@@ -27,7 +27,7 @@ public class ItemVoidarmor extends ElementsDimensionAdditions.ModElement {
 	public static final Item legs = null;
 	@GameRegistry.ObjectHolder("klcreations:voidarmorboots")
 	public static final Item boots = null;
-	public ItemVoidarmor(ElementsDimensionAdditions instance) {
+	public ItemVoidarmor(ElementsKlcreationsMod instance) {
 		super(instance, 19);
 	}
 

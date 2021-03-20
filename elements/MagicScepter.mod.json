@@ -1,11 +1,12 @@
 {
-  "_fv": 6,
+  "_fv": 13,
   "_type": "gun",
   "definition": {
     "renderType": 0,
     "texture": "magicscepeter24",
     "customModelName": "Normal",
     "name": "Magic Scepter",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:KleyzAdditionsTab"
     },
@@ -19,6 +20,7 @@
       "value": "entity.blaze.shoot"
     },
     "hasGlow": false,
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 1.2,

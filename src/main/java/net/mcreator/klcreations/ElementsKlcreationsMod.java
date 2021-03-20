@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
-public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator {
+public class ElementsKlcreationsMod implements IFuelHandler, IWorldGenerator {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
 	public final List<Supplier<Item>> items = new ArrayList<>();
@@ -53,23 +53,23 @@ public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator
 	public final List<Supplier<EntityEntry>> entities = new ArrayList<>();
 	public final List<Supplier<Potion>> potions = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
-	public ElementsDimensionAdditions() {
+	public ElementsKlcreationsMod() {
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
 		try {
 			for (ASMDataTable.ASMData asmData : event.getAsmData().getAll(ModElement.Tag.class.getName())) {
 				Class<?> clazz = Class.forName(asmData.getClassName());
-				if (clazz.getSuperclass() == ElementsDimensionAdditions.ModElement.class)
-					elements.add((ElementsDimensionAdditions.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
+				if (clazz.getSuperclass() == ElementsKlcreationsMod.ModElement.class)
+					elements.add((ElementsKlcreationsMod.ModElement) clazz.getConstructor(this.getClass()).newInstance(this));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		Collections.sort(elements);
-		elements.forEach(ElementsDimensionAdditions.ModElement::initElements);
-		this.addNetworkMessage(DimensionAdditionsVariables.WorldSavedDataSyncMessageHandler.class,
-				DimensionAdditionsVariables.WorldSavedDataSyncMessage.class, Side.SERVER, Side.CLIENT);
+		elements.forEach(ElementsKlcreationsMod.ModElement::initElements);
+		this.addNetworkMessage(KlcreationsModVariables.WorldSavedDataSyncMessageHandler.class,
+				KlcreationsModVariables.WorldSavedDataSyncMessage.class, Side.SERVER, Side.CLIENT);
 	}
 
 	public void registerSounds(RegistryEvent.Register<net.minecraft.util.SoundEvent> event) {
@@ -95,13 +95,13 @@ public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator
 	@SubscribeEvent
 	public void onPlayerLoggedIn(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent event) {
 		if (!event.player.world.isRemote) {
-			WorldSavedData mapdata = DimensionAdditionsVariables.MapVariables.get(event.player.world);
-			WorldSavedData worlddata = DimensionAdditionsVariables.WorldVariables.get(event.player.world);
+			WorldSavedData mapdata = KlcreationsModVariables.MapVariables.get(event.player.world);
+			WorldSavedData worlddata = KlcreationsModVariables.WorldVariables.get(event.player.world);
 			if (mapdata != null)
-				DimensionAdditions.PACKET_HANDLER.sendTo(new DimensionAdditionsVariables.WorldSavedDataSyncMessage(0, mapdata),
+				KlcreationsMod.PACKET_HANDLER.sendTo(new KlcreationsModVariables.WorldSavedDataSyncMessage(0, mapdata),
 						(EntityPlayerMP) event.player);
 			if (worlddata != null)
-				DimensionAdditions.PACKET_HANDLER.sendTo(new DimensionAdditionsVariables.WorldSavedDataSyncMessage(1, worlddata),
+				KlcreationsMod.PACKET_HANDLER.sendTo(new KlcreationsModVariables.WorldSavedDataSyncMessage(1, worlddata),
 						(EntityPlayerMP) event.player);
 		}
 	}
@@ -109,9 +109,9 @@ public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator
 	@SubscribeEvent
 	public void onPlayerChangedDimension(net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (!event.player.world.isRemote) {
-			WorldSavedData worlddata = DimensionAdditionsVariables.WorldVariables.get(event.player.world);
+			WorldSavedData worlddata = KlcreationsModVariables.WorldVariables.get(event.player.world);
 			if (worlddata != null)
-				DimensionAdditions.PACKET_HANDLER.sendTo(new DimensionAdditionsVariables.WorldSavedDataSyncMessage(1, worlddata),
+				KlcreationsMod.PACKET_HANDLER.sendTo(new KlcreationsModVariables.WorldSavedDataSyncMessage(1, worlddata),
 						(EntityPlayerMP) event.player);
 		}
 	}
@@ -119,7 +119,7 @@ public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator
 	public <T extends IMessage, V extends IMessage> void addNetworkMessage(Class<? extends IMessageHandler<T, V>> handler, Class<T> messageClass,
 			Side... sides) {
 		for (Side side : sides)
-			DimensionAdditions.PACKET_HANDLER.registerMessage(handler, messageClass, messageID, side);
+			KlcreationsMod.PACKET_HANDLER.registerMessage(handler, messageClass, messageID, side);
 		messageID++;
 	}
 	public static class GuiHandler implements IGuiHandler {
@@ -160,9 +160,9 @@ public class ElementsDimensionAdditions implements IFuelHandler, IWorldGenerator
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface Tag {
 		}
-		protected final ElementsDimensionAdditions elements;
+		protected final ElementsKlcreationsMod elements;
 		protected final int sortid;
-		public ModElement(ElementsDimensionAdditions elements, int sortid) {
+		public ModElement(ElementsKlcreationsMod elements, int sortid) {
 			this.elements = elements;
 			this.sortid = sortid;
 		}

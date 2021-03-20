@@ -25,13 +25,13 @@ import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.Block;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class BlockVoidlog extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class BlockVoidlog extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidlog")
 	public static final Block block = null;
-	public BlockVoidlog(ElementsDimensionAdditions instance) {
+	public BlockVoidlog(ElementsKlcreationsMod instance) {
 		super(instance, 23);
 	}
 

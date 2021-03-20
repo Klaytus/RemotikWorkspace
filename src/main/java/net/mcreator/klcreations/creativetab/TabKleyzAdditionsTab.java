@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.creativetab.CreativeTabs;
 
 import net.mcreator.klcreations.block.BlockVoidportalblock;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class TabKleyzAdditionsTab extends ElementsDimensionAdditions.ModElement {
-	public TabKleyzAdditionsTab(ElementsDimensionAdditions instance) {
+@ElementsKlcreationsMod.ModElement.Tag
+public class TabKleyzAdditionsTab extends ElementsKlcreationsMod.ModElement {
+	public TabKleyzAdditionsTab(ElementsKlcreationsMod instance) {
 		super(instance, 3);
 	}
 

@@ -19,15 +19,15 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import com.google.common.collect.Multimap;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class ItemVoidmultitool extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class ItemVoidmultitool extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidmultitool")
 	public static final Item block = null;
-	public ItemVoidmultitool(ElementsDimensionAdditions instance) {
+	public ItemVoidmultitool(ElementsKlcreationsMod instance) {
 		super(instance, 14);
 	}
 

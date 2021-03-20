@@ -22,13 +22,13 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class BlockVoidmatter2 extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class BlockVoidmatter2 extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidmatter2")
 	public static final Block block = null;
-	public BlockVoidmatter2(ElementsDimensionAdditions instance) {
+	public BlockVoidmatter2(ElementsKlcreationsMod instance) {
 		super(instance, 5);
 	}
 

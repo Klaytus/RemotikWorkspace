@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.EnumHelperClient;
 
 import net.minecraft.world.gen.layer.IntCache;
 import net.minecraft.world.gen.layer.GenLayerZoom;
@@ -66,10 +65,9 @@ import net.minecraft.block.Block;
 
 import net.mcreator.klcreations.item.ItemVoiddim;
 import net.mcreator.klcreations.block.BlockVoidportalblock;
-import net.mcreator.klcreations.block.BlockVoidmatter2;
 import net.mcreator.klcreations.block.BlockVoidmatter;
-import net.mcreator.klcreations.block.BlockVoidLava;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.block.BlockAcidvoid;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import javax.annotation.Nullable;
 
@@ -78,14 +76,14 @@ import java.util.List;
 
 import com.google.common.cache.LoadingCache;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class WorldVoiddim extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class WorldVoiddim extends ElementsKlcreationsMod.ModElement {
 	public static int DIMID = 3;
 	public static final boolean NETHER_TYPE = false;
 	@GameRegistry.ObjectHolder("klcreations:voiddim_portal")
 	public static final BlockCustomPortal portal = null;
 	public static DimensionType dtype;
-	public WorldVoiddim(ElementsDimensionAdditions instance) {
+	public WorldVoiddim(ElementsKlcreationsMod instance) {
 		super(instance, 1);
 	}
 
@@ -134,14 +132,6 @@ public class WorldVoiddim extends ElementsDimensionAdditions.ModElement {
 		@Override
 		public boolean canDoRainSnowIce(net.minecraft.world.chunk.Chunk chunk) {
 			return false;
-		}
-
-		@Override
-		@SideOnly(Side.CLIENT)
-		public net.minecraft.client.audio.MusicTicker.MusicType getMusicType() {
-			return EnumHelperClient.addMusicType("music.menu",
-					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation(("music.menu"))), 6000,
-					24000);
 		}
 
 		@Override
@@ -737,8 +727,8 @@ public class WorldVoiddim extends ElementsDimensionAdditions.ModElement {
 
 	public static class ChunkProviderModded implements IChunkGenerator {
 		private static final IBlockState STONE = BlockVoidmatter.block.getDefaultState();
-		private static final IBlockState STONE2 = BlockVoidmatter2.block.getDefaultState();
-		private static final IBlockState FLUID = BlockVoidLava.block.getDefaultState();
+		private static final IBlockState STONE2 = BlockVoidmatter.block.getDefaultState();
+		private static final IBlockState FLUID = BlockAcidvoid.block.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 		private static final int SEALEVEL = 63;

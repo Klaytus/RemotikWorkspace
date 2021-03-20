@@ -1,7 +1,6 @@
 tile.voidmatter.name=Void Soil
 advancements.coolweapon.descr=...
 tile.voidfoliage.name=Void Foliage
-fluid.voidlava=VoidLava
 item.magicprojectile.name=Magic Projectile
 item.voidingot.name=Void Ingot
 advancements.coolweapon.title=Magic Weapon!
@@ -18,6 +17,8 @@ item.voidarmorboots.name=Void Boots
 tile.voidlog.name=Void log
 item.voidkernel.name=Void Kernel
 advancements.start.title=Start
+fluid.acidvoid=Acidvoid
+tile.dark_cobblestone.name=Dark Cobblestone
 item.voidcrystal.name=Void Crystal
 advancements.start.descr=...
 tile.voidmatter2.name=Void Grass

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "klcreations:blocks/niger_buliga",
+    "up": "klcreations:blocks/niger_buliga",
+    "north": "klcreations:blocks/niger_buliga",
+    "east": "klcreations:blocks/niger_buliga",
+    "south": "klcreations:blocks/niger_buliga",
+    "west": "klcreations:blocks/niger_buliga",
+    "particle": "klcreations:blocks/niger_buliga"
+  }
+}

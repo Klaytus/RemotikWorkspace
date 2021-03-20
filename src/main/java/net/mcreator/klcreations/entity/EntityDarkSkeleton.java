@@ -34,15 +34,15 @@ import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.model.ModelBiped;
 
 import net.mcreator.klcreations.item.ItemVoidshard;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import java.util.Random;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class EntityDarkSkeleton extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class EntityDarkSkeleton extends ElementsKlcreationsMod.ModElement {
 	public static final int ENTITYID = 2;
 	public static final int ENTITYID_RANGED = 3;
-	public EntityDarkSkeleton(ElementsDimensionAdditions instance) {
+	public EntityDarkSkeleton(ElementsKlcreationsMod instance) {
 		super(instance, 25);
 	}
 

@@ -4,10 +4,10 @@
     "model": "forge:fluid"
   },
   "variants": {
-    "voidlava": [
+    "acidvoid": [
       {
         "custom": {
-          "fluid": "voidlava"
+          "fluid": "acidvoid"
         }
       }
     ]

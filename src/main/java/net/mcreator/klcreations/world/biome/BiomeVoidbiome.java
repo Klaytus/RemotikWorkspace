@@ -5,7 +5,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.BiomeManager;
 
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.biome.Biome;
@@ -17,19 +16,20 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
+import net.mcreator.klcreations.entity.EntityDarkSkeleton;
 import net.mcreator.klcreations.block.BlockVoidmatter2;
 import net.mcreator.klcreations.block.BlockVoidmatter;
 import net.mcreator.klcreations.block.BlockVoidlog;
 import net.mcreator.klcreations.block.BlockVoidFoliage;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import java.util.Random;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class BiomeVoidbiome extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class BiomeVoidbiome extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:voidbiome")
 	public static final BiomeGenCustom biome = null;
-	public BiomeVoidbiome(ElementsDimensionAdditions instance) {
+	public BiomeVoidbiome(ElementsKlcreationsMod instance) {
 		super(instance, 6);
 	}
 
@@ -40,21 +40,17 @@ public class BiomeVoidbiome extends ElementsDimensionAdditions.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 10));
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
-			super(new Biome.BiomeProperties("Void").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-13421773).setHeightVariation(0.2F)
+			super(new Biome.BiomeProperties("Voidbiome").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-13421773).setHeightVariation(0.2F)
 					.setTemperature(0F));
 			setRegistryName("voidbiome");
 			topBlock = BlockVoidmatter2.block.getDefaultState();
 			fillerBlock = BlockVoidmatter.block.getDefaultState();
-			decorator.generateFalls = true;
 			decorator.treesPerChunk = 3;
 			decorator.flowersPerChunk = 0;
 			decorator.grassPerChunk = 4;
-			decorator.deadBushPerChunk = 0;
 			decorator.mushroomsPerChunk = 0;
 			decorator.bigMushroomsPerChunk = 0;
 			decorator.reedsPerChunk = 0;
@@ -65,6 +61,7 @@ public class BiomeVoidbiome extends ElementsDimensionAdditions.ModElement {
 			this.spawnableCreatureList.clear();
 			this.spawnableWaterCreatureList.clear();
 			this.spawnableCaveCreatureList.clear();
+			this.spawnableCreatureList.add(new SpawnListEntry(EntityDarkSkeleton.EntityCustom.class, 60, 1, 3));
 		}
 
 		@SideOnly(Side.CLIENT)
@@ -98,7 +95,7 @@ public class BiomeVoidbiome extends ElementsDimensionAdditions.ModElement {
 
 		@Override
 		public boolean generate(World world, Random rand, BlockPos position) {
-			int height = rand.nextInt(5) + 7;
+			int height = rand.nextInt(5) + 6;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {

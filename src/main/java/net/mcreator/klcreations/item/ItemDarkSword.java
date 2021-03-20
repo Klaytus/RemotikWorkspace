@@ -17,18 +17,18 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.klcreations.creativetab.TabKleyzAdditionsTab;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import java.util.Set;
 import java.util.HashMap;
 
 import com.google.common.collect.Multimap;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class ItemDarkSword extends ElementsDimensionAdditions.ModElement {
+@ElementsKlcreationsMod.ModElement.Tag
+public class ItemDarkSword extends ElementsKlcreationsMod.ModElement {
 	@GameRegistry.ObjectHolder("klcreations:darksword")
 	public static final Item block = null;
-	public ItemDarkSword(ElementsDimensionAdditions instance) {
+	public ItemDarkSword(ElementsKlcreationsMod instance) {
 		super(instance, 26);
 	}
 

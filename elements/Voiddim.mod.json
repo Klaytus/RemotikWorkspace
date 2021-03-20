@@ -1,5 +1,5 @@
 {
-  "_fv": 6,
+  "_fv": 13,
   "_type": "dimension",
   "definition": {
     "portalFrame": {
@@ -28,14 +28,8 @@
     "mainFillerBlock": {
       "value": "CUSTOM:Voidmatter"
     },
-    "secondaryFillerBlock": {
-      "value": "CUSTOM:Voidmatter2"
-    },
-    "tertiaryFillerBlock": {
-      "value": ""
-    },
     "fluidBlock": {
-      "value": "CUSTOM:VoidLava"
+      "value": "CUSTOM:Acidvoid"
     },
     "airColor": {
       "value": -14013910,
@@ -48,9 +42,6 @@
     "doesWaterVaporize": true,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
-    "imitateOverworldBehaviour": false,
-    "dimensionMusic": {
-      "value": "music.menu"
-    }
+    "imitateOverworldBehaviour": false
   }
 }

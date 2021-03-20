@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "DIMENSION": 1,
-    "ENTITY": 3
+    "ENTITY": 3,
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -282,12 +282,21 @@
       }
     },
     {
-      "name": "VoidLava",
+      "name": "Acidvoid",
       "type": "fluid",
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DarkCobblestone",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dark_cobblestone"
     }
   ],
   "variable_elements": [],
@@ -297,7 +306,6 @@
       "tile.voidmatter.name": "Пустотная Почва",
       "tile.voidfoliage.name": "Темноватая листва",
       "advancements.coolweapon.descr": "...",
-      "fluid.voidlava": "VoidLava",
       "item.magicprojectile.name": "Магический патрон",
       "item.voidingot.name": "Пустотный слиток",
       "advancements.coolweapon.title": "Магическое Оружие!",
@@ -314,6 +322,8 @@
       "tile.voidlog.name": "Темноватое бревно",
       "item.voidkernel.name": "Пустотный стержень",
       "advancements.start.title": "Начало",
+      "fluid.acidvoid": "Acidvoid",
+      "tile.dark_cobblestone.name": "Dark Cobblestone",
       "item.voidcrystal.name": "Пустотный кристалл",
       "advancements.start.descr": "...",
       "tile.voidmatter2.name": "Пустотный дёрн",
@@ -325,7 +335,6 @@
       "tile.voidmatter.name": "Void Soil",
       "advancements.coolweapon.descr": "...",
       "tile.voidfoliage.name": "Void Foliage",
-      "fluid.voidlava": "VoidLava",
       "item.magicprojectile.name": "Magic Projectile",
       "item.voidingot.name": "Void Ingot",
       "advancements.coolweapon.title": "Magic Weapon!",
@@ -342,6 +351,8 @@
       "tile.voidlog.name": "Void log",
       "item.voidkernel.name": "Void Kernel",
       "advancements.start.title": "Start",
+      "fluid.acidvoid": "Acidvoid",
+      "tile.dark_cobblestone.name": "Dark Cobblestone",
       "item.voidcrystal.name": "Void Crystal",
       "advancements.start.descr": "...",
       "tile.voidmatter2.name": "Void Grass",
@@ -353,7 +364,7 @@
   "workspaceSettings": {
     "modid": "klcreations",
     "modName": "Dimension Additions",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "description": "Хай!",
     "author": "KleyzJoy, MR4son and MCreator",
     "websiteURL": "https://www.youtube.com/channel/UCkTZ0UsE2KmVVMfLpXwLu9A",
@@ -368,5 +379,5 @@
     "modElementsPackage": "net.mcreator.klcreations",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000214217
+  "mcreatorVersion": 202000547520
 }

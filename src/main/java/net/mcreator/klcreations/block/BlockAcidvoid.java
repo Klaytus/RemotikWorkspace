@@ -20,7 +20,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
-import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.block.statemap.StateMapperBase;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.model.ModelBakery;
@@ -30,41 +29,28 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
 import net.mcreator.klcreations.world.WorldVoiddim;
-import net.mcreator.klcreations.procedure.ProcedureAcidvoidMobplayerCollidesBlock;
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import java.util.Random;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class BlockVoidLava extends ElementsDimensionAdditions.ModElement {
-	@GameRegistry.ObjectHolder("klcreations:voidlava")
+@ElementsKlcreationsMod.ModElement.Tag
+public class BlockAcidvoid extends ElementsKlcreationsMod.ModElement {
+	@GameRegistry.ObjectHolder("klcreations:acidvoid")
 	public static final Block block = null;
-	@GameRegistry.ObjectHolder("klcreations:voidlava")
+	@GameRegistry.ObjectHolder("klcreations:acidvoid")
 	public static final Item item = null;
 	private Fluid fluid;
-	public BlockVoidLava(ElementsDimensionAdditions instance) {
+	public BlockAcidvoid(ElementsKlcreationsMod instance) {
 		super(instance, 32);
-		fluid = new Fluid("voidlava", new ResourceLocation("klcreations:blocks/acidvoid"), new ResourceLocation("klcreations:blocks/acidvoidflow"))
+		fluid = new Fluid("acidvoid", new ResourceLocation("klcreations:blocks/acidvoid"), new ResourceLocation("klcreations:blocks/acidvoidflow"))
 				.setLuminosity(0).setDensity(1000).setViscosity(1000).setGaseous(false);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockFluidClassic(fluid, Material.LAVA) {
-			@Override
-			public void onEntityCollidedWithBlock(World world, BlockPos pos, IBlockState state, Entity entity) {
-				super.onEntityCollidedWithBlock(world, pos, state, entity);
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("entity", entity);
-					ProcedureAcidvoidMobplayerCollidesBlock.executeProcedure($_dependencies);
-				}
-			}
-		}.setUnlocalizedName("voidlava").setRegistryName("voidlava"));
-		elements.items.add(() -> new ItemBlock(block).setRegistryName("voidlava"));
+		}.setUnlocalizedName("acidvoid").setRegistryName("acidvoid"));
+		elements.items.add(() -> new ItemBlock(block).setRegistryName("acidvoid"));
 	}
 
 	@Override
@@ -80,13 +66,13 @@ public class BlockVoidLava extends ElementsDimensionAdditions.ModElement {
 		ModelLoader.setCustomMeshDefinition(item, new ItemMeshDefinition() {
 			@Override
 			public ModelResourceLocation getModelLocation(ItemStack stack) {
-				return new ModelResourceLocation("klcreations:voidlava", "voidlava");
+				return new ModelResourceLocation("klcreations:acidvoid", "acidvoid");
 			}
 		});
 		ModelLoader.setCustomStateMapper(block, new StateMapperBase() {
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
-				return new ModelResourceLocation("klcreations:voidlava", "voidlava");
+				return new ModelResourceLocation("klcreations:acidvoid", "acidvoid");
 			}
 		});
 	}

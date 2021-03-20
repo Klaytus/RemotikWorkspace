@@ -11,7 +11,7 @@ import net.minecraft.world.World;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.client.Minecraft;
 
-public class DimensionAdditionsVariables {
+public class KlcreationsModVariables {
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "klcreations_mapvars";
 		public MapVariables() {
@@ -34,9 +34,9 @@ public class DimensionAdditionsVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				DimensionAdditions.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
+				KlcreationsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(0, this));
 			} else {
-				DimensionAdditions.PACKET_HANDLER.sendToAll(new WorldSavedDataSyncMessage(0, this));
+				KlcreationsMod.PACKET_HANDLER.sendToAll(new WorldSavedDataSyncMessage(0, this));
 			}
 		}
 
@@ -72,9 +72,9 @@ public class DimensionAdditionsVariables {
 		public void syncData(World world) {
 			this.markDirty();
 			if (world.isRemote) {
-				DimensionAdditions.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
+				KlcreationsMod.PACKET_HANDLER.sendToServer(new WorldSavedDataSyncMessage(1, this));
 			} else {
-				DimensionAdditions.PACKET_HANDLER.sendToDimension(new WorldSavedDataSyncMessage(1, this), world.provider.getDimension());
+				KlcreationsMod.PACKET_HANDLER.sendToDimension(new WorldSavedDataSyncMessage(1, this), world.provider.getDimension());
 			}
 		}
 
@@ -103,9 +103,9 @@ public class DimensionAdditionsVariables {
 			if (context.side == Side.SERVER) {
 				message.data.markDirty();
 				if (message.type == 0)
-					DimensionAdditions.PACKET_HANDLER.sendToAll(message);
+					KlcreationsMod.PACKET_HANDLER.sendToAll(message);
 				else
-					DimensionAdditions.PACKET_HANDLER.sendToDimension(message, world.provider.getDimension());
+					KlcreationsMod.PACKET_HANDLER.sendToDimension(message, world.provider.getDimension());
 			}
 			if (message.type == 0) {
 				world.getMapStorage().setData(MapVariables.DATA_NAME, message.data);

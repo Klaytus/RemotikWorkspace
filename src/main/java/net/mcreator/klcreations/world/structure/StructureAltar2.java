@@ -15,13 +15,13 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.klcreations.ElementsDimensionAdditions;
+import net.mcreator.klcreations.ElementsKlcreationsMod;
 
 import java.util.Random;
 
-@ElementsDimensionAdditions.ModElement.Tag
-public class StructureAltar2 extends ElementsDimensionAdditions.ModElement {
-	public StructureAltar2(ElementsDimensionAdditions instance) {
+@ElementsKlcreationsMod.ModElement.Tag
+public class StructureAltar2 extends ElementsKlcreationsMod.ModElement {
+	public StructureAltar2(ElementsKlcreationsMod instance) {
 		super(instance, 28);
 	}
 
