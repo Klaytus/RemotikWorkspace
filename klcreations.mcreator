@@ -304,8 +304,8 @@
   "language_map": {
     "ru_ru": {
       "tile.voidmatter.name": "Пустотная Почва",
-      "tile.voidfoliage.name": "Темноватая листва",
       "advancements.coolweapon.descr": "...",
+      "tile.voidfoliage.name": "Темноватая листва",
       "item.magicprojectile.name": "Магический патрон",
       "item.voidingot.name": "Пустотный слиток",
       "advancements.coolweapon.title": "Магическое Оружие!",
@@ -333,8 +333,8 @@
     },
     "en_us": {
       "tile.voidmatter.name": "Void Soil",
-      "advancements.coolweapon.descr": "...",
       "tile.voidfoliage.name": "Void Foliage",
+      "advancements.coolweapon.descr": "...",
       "item.magicprojectile.name": "Magic Projectile",
       "item.voidingot.name": "Void Ingot",
       "advancements.coolweapon.title": "Magic Weapon!",
