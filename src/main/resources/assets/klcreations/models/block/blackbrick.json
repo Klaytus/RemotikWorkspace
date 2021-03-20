@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "klcreations:blocks/blackbrick",
+    "up": "klcreations:blocks/blackbrick",
+    "north": "klcreations:blocks/blackbrick",
+    "east": "klcreations:blocks/blackbrick",
+    "south": "klcreations:blocks/blackbrick",
+    "west": "klcreations:blocks/blackbrick",
+    "particle": "klcreations:blocks/blackbrick"
+  }
+}

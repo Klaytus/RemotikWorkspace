@@ -1,0 +1,33 @@
+{
+  "group": "klcreations",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "klcreations:voidingot"
+    },
+    "2": {
+      "item": "klcreations:voidingot"
+    },
+    "3": {
+      "item": "klcreations:voidkernel"
+    },
+    "4": {
+      "item": "klcreations:voidingot"
+    },
+    "5": {
+      "item": "klcreations:voidkernel"
+    },
+    "7": {
+      "item": "klcreations:voidkernel"
+    }
+  },
+  "result": {
+    "item": "klcreations:darksword",
+    "count": 1
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "id_map": {
+    "DIMENSION": 1,
+    "ENTITY": 3
+  },
+  "mod_elements": [
+    {
+      "name": "Voiddim",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      }
+    },
+    {
+      "name": "Voidportalblock",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "KleyzAdditionsTab",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidmatter",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidmatter2",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidbiome",
+      "type": "biome",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidshard",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidcrystal",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VoidIngot",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VoidKernel",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe1",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe2",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe3",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidmultitool",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe4",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe5",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MagicScepter",
+      "type": "gun",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      }
+    },
+    {
+      "name": "MagicProjectile",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidarmor",
+      "type": "armor",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Blackbrick",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Start",
+      "type": "achievement",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CoolWeapon",
+      "type": "achievement",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidlog",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "VoidFoliage",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DarkSkeleton",
+      "type": "mob",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2,
+        "1": 3
+      }
+    },
+    {
+      "name": "DarkSword",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Altar1",
+      "type": "structure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Altar2",
+      "type": "structure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe6",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe7",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Voidrecipe8",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AcidvoidMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidLava",
+      "type": "fluid",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "ru_ru": {
+      "tile.voidmatter.name": "Пустотная Почва",
+      "tile.voidfoliage.name": "Темноватая листва",
+      "advancements.coolweapon.descr": "...",
+      "fluid.voidlava": "VoidLava",
+      "item.magicprojectile.name": "Магический патрон",
+      "item.voidingot.name": "Пустотный слиток",
+      "advancements.coolweapon.title": "Магическое Оружие!",
+      "item.voiddim.name": "Пустотная сфера",
+      "item.voidarmorlegs.name": "Пустотные поножи",
+      "item.voidmultitool.name": "Пустотный мульти-инструмент",
+      "item.magicscepter.name": "Магический скипитр",
+      "item.darksword.name": "Тёмный меч",
+      "itemGroup.tabkleyzadditionstab": "Dimension Additions",
+      "item.voidarmorbody.name": "Пустотная кираса",
+      "tile.blackbrick.name": "Тёмный кирпич",
+      "item.voidshard.name": "Пустотный шард",
+      "item.voidarmorboots.name": "Пустотные ботинки",
+      "tile.voidlog.name": "Темноватое бревно",
+      "item.voidkernel.name": "Пустотный стержень",
+      "advancements.start.title": "Начало",
+      "item.voidcrystal.name": "Пустотный кристалл",
+      "advancements.start.descr": "...",
+      "tile.voidmatter2.name": "Пустотный дёрн",
+      "entity.darkskeleton.name": "Тёмный скелет",
+      "item.voidarmorhelmet.name": "Пустотный шлем",
+      "tile.voidportalblock.name": "Рамка пустотного портала"
+    },
+    "en_us": {
+      "tile.voidmatter.name": "Void Soil",
+      "advancements.coolweapon.descr": "...",
+      "tile.voidfoliage.name": "Void Foliage",
+      "fluid.voidlava": "VoidLava",
+      "item.magicprojectile.name": "Magic Projectile",
+      "item.voidingot.name": "Void Ingot",
+      "advancements.coolweapon.title": "Magic Weapon!",
+      "item.voiddim.name": "Void Orb",
+      "item.voidarmorlegs.name": "Void Leggings",
+      "item.voidmultitool.name": "Void multi-tool",
+      "item.magicscepter.name": "Magic Scepter",
+      "item.darksword.name": "Dark Sword",
+      "itemGroup.tabkleyzadditionstab": "Dimension Additions",
+      "item.voidarmorbody.name": "Void Body",
+      "tile.blackbrick.name": "Black Brick",
+      "item.voidshard.name": "Void shard",
+      "item.voidarmorboots.name": "Void Boots",
+      "tile.voidlog.name": "Void log",
+      "item.voidkernel.name": "Void Kernel",
+      "advancements.start.title": "Start",
+      "item.voidcrystal.name": "Void Crystal",
+      "advancements.start.descr": "...",
+      "tile.voidmatter2.name": "Void Grass",
+      "entity.darkskeleton.name": "Dark Skeleton",
+      "item.voidarmorhelmet.name": "Void Helmet",
+      "tile.voidportalblock.name": "Void portal frame"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "klcreations",
+    "modName": "Dimension Additions",
+    "version": "0.0.7",
+    "description": "Хай!",
+    "author": "KleyzJoy, MR4son and MCreator",
+    "websiteURL": "https://www.youtube.com/channel/UCkTZ0UsE2KmVVMfLpXwLu9A",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.12.2",
+    "credits": "Мод был создан с помощью Mcreator\u0027а",
+    "modElementsPackage": "net.mcreator.klcreations",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}

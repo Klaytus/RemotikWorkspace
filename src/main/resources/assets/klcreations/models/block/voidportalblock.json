@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "klcreations:blocks/oidportalframetop",
+    "up": "klcreations:blocks/oidportalframetop",
+    "north": "klcreations:blocks/voidportalframetexture",
+    "east": "klcreations:blocks/voidportalframetexture",
+    "south": "klcreations:blocks/voidportalframetexture",
+    "west": "klcreations:blocks/voidportalframetexture",
+    "particle": "klcreations:blocks/oidportalframetop"
+  }
+}

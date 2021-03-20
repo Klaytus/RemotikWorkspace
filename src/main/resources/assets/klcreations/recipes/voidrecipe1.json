@@ -1,0 +1,33 @@
+{
+  "group": "klcreations",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "klcreations:voidshard"
+    },
+    "2": {
+      "item": "klcreations:voidshard"
+    },
+    "3": {
+      "item": "klcreations:voidshard"
+    },
+    "5": {
+      "item": "klcreations:voidshard"
+    },
+    "6": {
+      "item": "klcreations:voidshard"
+    },
+    "7": {
+      "item": "klcreations:voidshard"
+    }
+  },
+  "result": {
+    "item": "klcreations:voidcrystal",
+    "count": 2
+  }
+}

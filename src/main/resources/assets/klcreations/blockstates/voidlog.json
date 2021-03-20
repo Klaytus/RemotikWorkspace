@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "normal": {
+      "model": "klcreations:voidlog"
+    },
+    "facing=south": {
+      "model": "klcreations:voidlog"
+    },
+    "facing=north": {
+      "model": "klcreations:voidlog"
+    },
+    "facing=east": {
+      "model": "klcreations:voidlog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "klcreations:voidlog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "klcreations:voidlog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "klcreations:voidlog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

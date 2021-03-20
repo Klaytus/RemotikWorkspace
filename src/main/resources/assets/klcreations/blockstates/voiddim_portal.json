@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "klcreations:voiddim_portal_ew"
+    },
+    "axis=x": {
+      "model": "klcreations:voiddim_portal_ns"
+    },
+    "inventory": {
+      "model": "klcreations:voiddim_portal_ns"
+    }
+  }
+}

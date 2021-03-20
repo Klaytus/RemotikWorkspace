@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "voidmultitool",
+    "customModelName": "Normal",
+    "name": "Void multi-tool",
+    "creativeTab": {
+      "value": "CUSTOM:KleyzAdditionsTab"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 5,
+    "efficiency": 12.5,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 10,
+    "damageVsEntity": 13.5,
+    "usageCount": 10000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:VoidIngot"
+      }
+    ]
+  }
+}

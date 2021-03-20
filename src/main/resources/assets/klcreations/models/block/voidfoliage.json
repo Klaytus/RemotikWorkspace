@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "klcreations:blocks/void_foliage",
+    "up": "klcreations:blocks/void_foliage",
+    "north": "klcreations:blocks/void_foliage",
+    "east": "klcreations:blocks/void_foliage",
+    "south": "klcreations:blocks/void_foliage",
+    "west": "klcreations:blocks/void_foliage",
+    "particle": "klcreations:blocks/void_foliage"
+  }
+}

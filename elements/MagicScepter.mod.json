@@ -1,0 +1,35 @@
+{
+  "_fv": 6,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "magicscepeter24",
+    "customModelName": "Normal",
+    "name": "Magic Scepter",
+    "creativeTab": {
+      "value": "CUSTOM:KleyzAdditionsTab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:MagicProjectile"
+    },
+    "shootConstantly": false,
+    "usageCount": 1500,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.2,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 6,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MagicProjectile"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

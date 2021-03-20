@@ -1,0 +1,24 @@
+{
+  "group": "klcreations",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "klcreations:voidingot"
+    },
+    "4": {
+      "item": "klcreations:voidshard"
+    },
+    "6": {
+      "item": "klcreations:voidingot"
+    }
+  },
+  "result": {
+    "item": "klcreations:voidkernel",
+    "count": 1
+  }
+}

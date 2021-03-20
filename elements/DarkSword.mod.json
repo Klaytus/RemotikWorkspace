@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ark_word",
+    "customModelName": "Normal",
+    "name": "Dark Sword",
+    "creativeTab": {
+      "value": "CUSTOM:KleyzAdditionsTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5,
+    "enchantability": 2,
+    "damageVsEntity": 9.5,
+    "usageCount": 6500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:VoidIngot"
+      }
+    ]
+  }
+}

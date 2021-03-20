@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_0": "dark_skeleton"
+      },
+      "name": "default"
+    }
+  }
+}

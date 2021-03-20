@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "klcreations:magicscepter"
+    },
+    "title": {
+      "translate": "advancements.coolweapon.title"
+    },
+    "description": {
+      "translate": "advancements.coolweapon.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "coolweapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "klcreations:magicscepter",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "klcreations:start"
+}

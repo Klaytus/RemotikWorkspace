@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "klcreations:blocks/voidmattertexture",
+    "up": "klcreations:blocks/voidmattertexture",
+    "north": "klcreations:blocks/voidmattertexture",
+    "east": "klcreations:blocks/voidmattertexture",
+    "south": "klcreations:blocks/voidmattertexture",
+    "west": "klcreations:blocks/voidmattertexture",
+    "particle": "klcreations:blocks/voidmattertexture"
+  }
+}

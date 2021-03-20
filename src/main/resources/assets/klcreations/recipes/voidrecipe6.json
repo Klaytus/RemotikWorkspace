@@ -1,0 +1,30 @@
+{
+  "group": "klcreations",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "klcreations:voidingot"
+    },
+    "2": {
+      "item": "klcreations:voidingot"
+    },
+    "4": {
+      "item": "klcreations:voidkernel"
+    },
+    "5": {
+      "item": "klcreations:voidingot"
+    },
+    "6": {
+      "item": "klcreations:voidkernel"
+    }
+  },
+  "result": {
+    "item": "klcreations:magicscepter",
+    "count": 1
+  }
+}
